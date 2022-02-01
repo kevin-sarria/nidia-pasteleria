@@ -1,0 +1,334 @@
+
+:root {
+    --rosadoBanner: #f97370;
+    --rosadoBannerClaro: #fc7c7a;
+    --rosadoOscuro: #ff4b48;
+    --verdePastel: #42E142;
+    --verdePastelOscuro: #2CE42C;
+    --blanco: #fff;
+    --grisOscuro: #2e2e2e;
+    --grisTextoHeader: #CCCBCB;
+    --fuenteParrafos: 'Bebas Neue', cursive;
+}
+
+
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+
+
+/* Generales */
+
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family:var(--fuenteParrafos);
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+
+
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+
+
+
+/* Globales */
+
+a{
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+h1 {
+    font-size: 5rem;
+    color: var(--rosadoOscuro);
+}
+
+h2 {
+    font-size: 4rem;
+    color: var(--rosadoOscuro);
+}
+
+h3 {
+    font-size: 3rem;
+    color: var(--rosadoOscuro);
+}
+
+h4 {
+    font-size: 2rem;
+    color: var(--rosadoOscuro);
+}
+
+p {
+    font-size: 1.8rem;
+    font-weight: 100;
+    color: var(--grisOscuro);
+}
+
+.contenedor {
+    margin: 0 auto;
+    max-width: 120rem;
+    width: 90%;
+}
+
+
+
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/* Barra navegación */
+
+.header {
+    background-image: url('../img/banner_torta.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 800px) {
+    .header {
+        height: 40rem;
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+.barra {
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.header__navegacion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 80rem;
+    width: 80%;
+    padding: 0;
+    margin: 0;
+
+}
+
+@media (min-width: 800px) {
+
+
+.header__navegacion {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 120rem;
+    width: 90%;
+    padding: 0 4rem;
+    align-items: center;
+    
+}
+}
+
+
+
+.links__especificos{
+    font-family: var();
+    padding: 1rem;
+    color: var(--grisTextoHeader);
+    font-size: 2rem;
+    display: none;
+}
+
+@media (min-width: 800px) {
+    .links__especificos{
+        display: block;
+    }
+}
+
+.links__especificos:hover {
+    background-color: var(--rosadoBannerClaro);
+    border-radius: 5px;
+    color: var(--blanco);
+}
+
+.header__logo a{
+    padding: 1rem;
+    color: var(--blanco);
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+}
+
+.header__logo a:visited {
+    color: var(--blanco);
+}
+
+.icon_smart {
+    width: 6rem;
+    height: 6rem;
+    cursor: pointer;
+}
+
+@media (min-width: 800px) {
+    .icon_smart {
+        display: none;
+    }
+}
+
+
+
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/* Contenido principal */
+
+@media (min-width: 800px ) {
+
+    .contenido__principal {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 4rem;
+    }
+}
+
+
+.titulo-pag-principal {
+    text-align: center;
+    color: var(--rosadoOscuro);
+}
+
+.container__info__tortas {
+    width: 80%;
+    margin: 4rem auto;
+    text-align: center;
+}
+
+@media (min-width: 800px) {
+    .container__info__tortas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+
+.torta-postre {
+    max-width: 20rem;
+    max-height: 20rem;
+}
+
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.boton_pedido {
+    font-size: 1.7rem;
+    cursor: pointer;
+    border: 1px solid var(--verdePastel);
+    color: var(--verdePastel);
+    background-color: var(--blanco);
+    border-radius: 3rem;
+    padding: 1rem;
+}
+
+.boton_pedido:hover {
+    background-color: var(--verdePastelOscuro);
+    color: var(--blanco);
+}
+
+.boton_mas_info {
+    font-size: 1.7rem;
+    cursor: pointer;
+    border: 1px solid var(--rosadoBanner);
+    color: var(--rosadoBanner);
+    background-color: var(--blanco);
+    border-radius: 3rem;
+    padding: 1rem;
+}
+
+.boton_mas_info:hover {
+    background-color: var(--rosadoOscuro);
+    color: var(--blanco);
+}
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+
+/* Seccion noticias */
+
+.container__noticias {
+    padding: 1rem;
+    border: 1px solid var(--rosadoBannerClaro);
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.noticias__img {
+    max-width: 80%;
+}
+
+
+
+/* Footer */
+
+.footer {
+    display: flex;
+    background-color: var(--rosadoBanner);
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.footer__info {
+    font-size: 2rem;
+    margin: 0 auto;
+    color: var(--blanco);
+}
