@@ -179,7 +179,6 @@ p {
 
 
 .links__especificos{
-    font-family: var();
     padding: 1rem;
     color: var(--grisTextoHeader);
     font-size: 2rem;
@@ -225,6 +224,9 @@ p {
     color: var(--blanco);
 }
 
+
+/* Menu Tablets y Telefonos */
+
 .icon_smart {
     width: 5rem;
     height: 5rem;
@@ -243,6 +245,40 @@ p {
     .icon_smart {
         display: none;
     }
+}
+
+
+.mostrar {
+    display: block !important;
+    z-index: 1000; 
+}
+
+
+.boton__salir__menu__smart {
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    margin-left: 80%;
+}
+
+
+.header__navegacion__smart{
+    position: absolute;
+    text-align: center;
+    padding: 10rem;
+    margin-top: -15rem;
+    width: 100%;
+    display: none;
+    height: 120rem;
+    background-color: var(--rosadoBanner);
+}
+
+
+
+.links__especificos__smart {
+    padding: 1rem;
+    color: var(--grisTextoHeader);
+    font-size: 2rem;
 }
 
 
