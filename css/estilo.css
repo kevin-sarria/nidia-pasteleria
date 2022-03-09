@@ -109,31 +109,32 @@ p {
 /* Barra navegación */
 
 .header {
-    background-image: url('../img/banner_torta.webp');
+    background-color: var(--rosadoOscuro);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 20rem;
+    height: 10rem;
     margin-bottom: 2rem;
 }
 
 @media (min-width: 800px) {
     .header {
-        height: 40rem;
+        height: 10rem;
         margin-bottom: 2rem;
     }
 }
 
 @media (min-width: 800px) {
     .header {
-        height: 40rem;
+        height: 10rem;
         margin-bottom: 2rem;
     }
 }
 
 
 .barra {
-    height: 18rem;
+    background-color: var(--rosadoBanner);
+    height: 10rem;
     position: fixed;
     margin: 0 auto;
     width: 100%;
@@ -141,7 +142,7 @@ p {
 
 @media (min-width: 400px) {
     .barra {
-        height: 15rem;
+        height: 10rem;
         position: fixed;
         margin: 0 auto;
         width: 100%;
@@ -149,28 +150,22 @@ p {
 }
 
 
-.header__navegacion {
+.header__barra {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    max-width: 80rem;
-    width: 80%;
-    padding: 0;
-    margin: 0;
-    height: 13rem;
+    max-width: 120rem;
+    width: 90%;
+    height: 10rem;
+    margin: 0 auto;
 
 }
 
 @media (min-width: 800px) {
 
-
 .header__navegacion {
-    margin: 0 auto;
+    padding: 0;
     display: flex;
-    justify-content: space-between;
-    max-width: 120rem;
-    width: 90%;
-    padding: 0 4rem;
     align-items: center;
     
 }
@@ -197,89 +192,37 @@ p {
     color: var(--blanco);
 }
 
-.header__logo a{
+.header__logo {
     padding: 0.5rem;
     color: var(--blanco);
     font-family: var(--fuenteLogo);
-    font-size: 2.5rem;
+    font-size: 2.6rem;
 }
 
 
 @media (min-width: 400px) {
-    .header__logo a{
-        padding: 1rem;
-        font-size: 2.2rem;
-    }   
-}
-
-
-@media (min-width: 900px) {
-    .header__logo a{
+    .header__logo {
         padding: 1rem;
         font-size: 3rem;
     }   
 }
 
-.header__logo a:visited {
+
+@media (min-width: 900px) {
+    .header__logo{
+        padding: 1rem;
+        font-size: 3rem;
+    }   
+}
+
+.header__logo:visited {
     color: var(--blanco);
 }
 
 
 /* Menu Tablets y Telefonos */
 
-.icon_smart {
-    width: 5rem;
-    height: 5rem;
-    cursor: pointer;
-}
 
-@media (min-width: 400px) {
-    .icon_smart {
-        width: 6rem;
-        height: 6rem;
-        cursor: pointer;
-    }
-}
-
-@media (min-width: 800px) {
-    .icon_smart {
-        display: none;
-    }
-}
-
-
-.mostrar {
-    display: block !important;
-    z-index: 1000; 
-}
-
-
-.boton__salir__menu__smart {
-    width: 5rem;
-    height: 5rem;
-    cursor: pointer;
-    margin-left: 80%;
-}
-
-
-.header__navegacion__smart{
-    position: absolute;
-    text-align: center;
-    padding: 10rem;
-    margin-top: -15rem;
-    width: 100%;
-    display: none;
-    height: 120rem;
-    background-color: var(--rosadoBanner);
-}
-
-
-
-.links__especificos__smart {
-    padding: 1rem;
-    color: var(--grisTextoHeader);
-    font-size: 2rem;
-}
 
 
 
@@ -323,6 +266,13 @@ p {
         text-align: center;
         align-items: center;
     }
+}
+
+.tortas {
+    border: 1px solid var(--rosadoBannerClaro);
+    border-radius: 1rem;
+    background-color: var(--rosadoOscuro);
+    padding: 2rem;
 }
 
 

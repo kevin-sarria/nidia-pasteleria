@@ -7,7 +7,7 @@ let botonSalirMenuSmart = document.querySelector('.boton__salir__menu__smart');
 let clasesListaMenu = document.querySelector('.header__navegacion__smart');
 
 
-menuSmart.addEventListener('click', () => {
+/*menuSmart.addEventListener('click', () => {
     if ( clasesListaMenu.className != "mostrar" ) {
         clasesListaMenu.classList.add("mostrar");
     }
@@ -15,9 +15,9 @@ menuSmart.addEventListener('click', () => {
 
 botonSalirMenuSmart.addEventListener('click', () => {
         clasesListaMenu.classList.remove("mostrar");
-})
+})*/
 
-
+/*
 
 window.setInterval(
     () => {  
@@ -45,7 +45,7 @@ window.setInterval(
     }, 100)
 
     
-
+*/
 
 
 
